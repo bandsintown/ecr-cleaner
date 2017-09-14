@@ -78,4 +78,4 @@ Build:
 
 Run:
 
-	docker run -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -it --rm ecr-cleaner -dry-run=true -aws.region=eu-west-1
+	docker run -e AWS_ACCESS_KEY_ID=<your-access-key-id> -e AWS_SECRET_ACCESS_KEY=<your-secret-access-key> -it --rm ecr-cleaner -dry-run=true -aws.region=eu-west-1
