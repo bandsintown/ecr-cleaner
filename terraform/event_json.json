@@ -8,7 +8,7 @@
     "value": "${dry_run}"
   },
   {
-    "name": "-repository",
-    "value": "${repository}"
+    "name": "-keep",
+    "value": "${keep}"
   }
 ]

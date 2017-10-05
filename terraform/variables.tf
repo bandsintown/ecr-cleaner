@@ -1,15 +1,20 @@
 variable "aws_region" {
-  default = "eu-central-1"
+  default = "us-east-1"
 }
 
-variable "cron" {}
+variable "keep" {
+  default="100"
+}
 
-variable "repository" {
-  default = ""
+variable "cron" {
+  default="0 * * * ? *"
 }
 
 variable "dry_run" {
-  default = ""
+  default = "true"
 }
 
-variable "repo_region" {}
+variable "repo_region" {
+   default="us-east-1"
+}
+

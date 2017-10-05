@@ -16,6 +16,6 @@ data "template_file" "event_json" {
   vars = {
     aws_region = "${var.repo_region}"
     dry_run    = "${var.dry_run}"
-    repository = "${var.repository}"
+    keep       = "${var.keep}"
   }
 }
