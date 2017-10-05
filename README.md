@@ -12,29 +12,29 @@ It can clean up a specific repository as well as all repos within an aws account
 6. Delete images from the repository
 
 ### Installation (Not Used)
-    go get github.com/WeltN24/ecr-cleaner
+    go get github.com/bandsintown/ecr-cleaner
 
 ### Default values
-    aws.region = eu-central-1
+    aws.region = us-east-1
     dry-run = false
     keep = 100
 
 ### Examples
 clean up all repos
 
-`ecr-cleaner -aws.region=eu-west-1`
+`ecr-cleaner -aws.region=us-east-1`
 
 clean up my-awesome-repo
 
-`ecr-cleaner -aws.region=eu-west-1 -repo=my-awesome-repo`
+`ecr-cleaner -aws.region=us-east-1 -repo=my-awesome-repo`
 
 go for a dry run
 
-`ecr-cleaner -aws.region=eu-west-1 -repo=my-awesome-repo -dry-run=true`
+`ecr-cleaner -aws.region=us-east-1 -repo=my-awesome-repo -dry-run=true`
 
 leave n images in repo
 
-`ecr-cleaner -aws.region=eu-west-1 -repo=my-awesome-repo -keep=5`
+`ecr-cleaner -aws.region=us-east-1 -repo=my-awesome-repo -keep=5`
 
 **Note**: Most of the parameters could be specified without '=' sign.
 But because of the usage of [parse flag](https://golang.org/pkg/flag/) it is
@@ -79,4 +79,4 @@ Build:
 
 Run:
 
-	docker run -e AWS_ACCESS_KEY_ID=<your-access-key-id> -e AWS_SECRET_ACCESS_KEY=<your-secret-access-key> -it --rm ecr-cleaner -dry-run=true -aws.region=eu-west-1
+	docker run -e AWS_ACCESS_KEY_ID=<your-access-key-id> -e AWS_SECRET_ACCESS_KEY=<your-secret-access-key> -it --rm ecr-cleaner -dry-run=true -aws.region=us-east-1
