@@ -1,3 +1,5 @@
+[![Build status](https://badge.buildkite.com/2af2f74a224527917a34af3599ba4fe606b5bb74a6e8ee220e.svg)](https://buildkite.com/bandsintown/ecr-cleaner)
+
 # ecr-cleaner
 
 ecr-cleaner deletes old images based on the time they have been pushed.
